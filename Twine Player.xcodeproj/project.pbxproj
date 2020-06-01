@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE06758C247EFC3C0036DCBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06758B247EFC3C0036DCBB /* AppDelegate.swift */; };
+		EE06758E247EFC3C0036DCBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06758D247EFC3C0036DCBB /* SceneDelegate.swift */; };
+		EE067590247EFC3C0036DCBB /* LaucnhScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06758F247EFC3C0036DCBB /* LaucnhScreenViewController.swift */; };
+		EE067593247EFC3C0036DCBB /* LaucnhScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE067591247EFC3C0036DCBB /* LaucnhScreen.storyboard */; };
+		EE067595247EFC3E0036DCBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE067594247EFC3E0036DCBB /* Assets.xcassets */; };
+		EE0675A3247EFC3E0036DCBB /* Twine_PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0675A2247EFC3E0036DCBB /* Twine_PlayerTests.swift */; };
+		EE0675AE247EFC3E0036DCBB /* Twine_PlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0675AD247EFC3E0036DCBB /* Twine_PlayerUITests.swift */; };
+		EE0675C0247F98970036DCBB /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE0675BF247F98970036DCBB /* SF-Pro-Text-Bold.otf */; };
+		EE0675C7247FD8580036DCBB /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EE0675C6247FD8580036DCBB /* logo.png */; };
+		EE0675C9247FD9150036DCBB /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE0675C8247FD9150036DCBB /* SF-Pro-Text-Medium.otf */; };
+		EE0675CC247FD9650036DCBB /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE0675CA247FD9650036DCBB /* SF-Pro-Text-Regular.otf */; };
+		EE0675CD247FD9650036DCBB /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE0675CB247FD9650036DCBB /* SF-Pro-Text-RegularItalic.otf */; };
+		EE0675CF24802C5E0036DCBB /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0675CE24802C5E0036DCBB /* Game.storyboard */; };
+		EE0675D524802DF40036DCBB /* GameListVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0675D424802DF40036DCBB /* GameListVIewController.swift */; };
+		EE0675D724802E070036DCBB /* GameShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0675D624802E070036DCBB /* GameShowViewController.swift */; };
+		EE0675D924802F7A0036DCBB /* TwineListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0675D824802F7A0036DCBB /* TwineListParser.swift */; };
+		EE7572D62482D949008AD439 /* GameViewcontrollerExtenction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7572D52482D949008AD439 /* GameViewcontrollerExtenction.swift */; };
+		EE7572D824843598008AD439 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7572D724843598008AD439 /* WebViewController.swift */; };
+		EEF391A5248259A0006088FC /* Pods_Twine_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE6D752BAF0ABA660EAE999 /* Pods_Twine_Player.framework */; };
+		EEF391A6248259A0006088FC /* Pods_Twine_Player.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE6D752BAF0ABA660EAE999 /* Pods_Twine_Player.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE06759F247EFC3E0036DCBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE067580247EFC3C0036DCBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE067587247EFC3C0036DCBB;
+			remoteInfo = "Twine Player";
+		};
+		EE0675AA247EFC3E0036DCBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE067580247EFC3C0036DCBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE067587247EFC3C0036DCBB;
+			remoteInfo = "Twine Player";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EEF391A7248259A0006088FC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EEF391A6248259A0006088FC /* Pods_Twine_Player.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B9291B206D1EBD78858D460 /* Pods-Twine Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twine Player.debug.xcconfig"; path = "Target Support Files/Pods-Twine Player/Pods-Twine Player.debug.xcconfig"; sourceTree = "<group>"; };
+		1AE6D752BAF0ABA660EAE999 /* Pods_Twine_Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twine_Player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE798913B39D3EC6926ED96A /* Pods-Twine Player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twine Player.release.xcconfig"; path = "Target Support Files/Pods-Twine Player/Pods-Twine Player.release.xcconfig"; sourceTree = "<group>"; };
+		EE067588247EFC3C0036DCBB /* Twine Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twine Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE06758B247EFC3C0036DCBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE06758D247EFC3C0036DCBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EE06758F247EFC3C0036DCBB /* LaucnhScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaucnhScreenViewController.swift; sourceTree = "<group>"; };
+		EE067592247EFC3C0036DCBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaucnhScreen.storyboard; sourceTree = "<group>"; };
+		EE067594247EFC3E0036DCBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE067599247EFC3E0036DCBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE06759E247EFC3E0036DCBB /* Twine PlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Twine PlayerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0675A2247EFC3E0036DCBB /* Twine_PlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twine_PlayerTests.swift; sourceTree = "<group>"; };
+		EE0675A4247EFC3E0036DCBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE0675A9247EFC3E0036DCBB /* Twine PlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Twine PlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0675AD247EFC3E0036DCBB /* Twine_PlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twine_PlayerUITests.swift; sourceTree = "<group>"; };
+		EE0675AF247EFC3E0036DCBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE0675BF247F98970036DCBB /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		EE0675C6247FD8580036DCBB /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		EE0675C8247FD9150036DCBB /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		EE0675CA247FD9650036DCBB /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		EE0675CB247FD9650036DCBB /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		EE0675CE24802C5E0036DCBB /* Game.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
+		EE0675D424802DF40036DCBB /* GameListVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListVIewController.swift; sourceTree = "<group>"; };
+		EE0675D624802E070036DCBB /* GameShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameShowViewController.swift; sourceTree = "<group>"; };
+		EE0675D824802F7A0036DCBB /* TwineListParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwineListParser.swift; sourceTree = "<group>"; };
+		EE7572D52482D949008AD439 /* GameViewcontrollerExtenction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewcontrollerExtenction.swift; sourceTree = "<group>"; };
+		EE7572D724843598008AD439 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE067585247EFC3C0036DCBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF391A5248259A0006088FC /* Pods_Twine_Player.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE06759B247EFC3E0036DCBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0675A6247EFC3E0036DCBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		760873A975F7BB2EC3DA2CF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AE6D752BAF0ABA660EAE999 /* Pods_Twine_Player.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98AFB039E953CDFBD7107E02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B9291B206D1EBD78858D460 /* Pods-Twine Player.debug.xcconfig */,
+				DE798913B39D3EC6926ED96A /* Pods-Twine Player.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE06757F247EFC3C0036DCBB = {
+			isa = PBXGroup;
+			children = (
+				EE06758A247EFC3C0036DCBB /* Twine Player */,
+				EE0675A1247EFC3E0036DCBB /* Twine PlayerTests */,
+				EE0675AC247EFC3E0036DCBB /* Twine PlayerUITests */,
+				EE067589247EFC3C0036DCBB /* Products */,
+				98AFB039E953CDFBD7107E02 /* Pods */,
+				760873A975F7BB2EC3DA2CF9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE067589247EFC3C0036DCBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE067588247EFC3C0036DCBB /* Twine Player.app */,
+				EE06759E247EFC3E0036DCBB /* Twine PlayerTests.xctest */,
+				EE0675A9247EFC3E0036DCBB /* Twine PlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE06758A247EFC3C0036DCBB /* Twine Player */ = {
+			isa = PBXGroup;
+			children = (
+				EE06758B247EFC3C0036DCBB /* AppDelegate.swift */,
+				EE0675BB247F94740036DCBB /* Launch Screen */,
+				EE0675C1247F98A30036DCBB /* GameList */,
+				EE0675BC247F983C0036DCBB /* Recourses */,
+				EE06758D247EFC3C0036DCBB /* SceneDelegate.swift */,
+				EE067594247EFC3E0036DCBB /* Assets.xcassets */,
+				EE067599247EFC3E0036DCBB /* Info.plist */,
+			);
+			path = "Twine Player";
+			sourceTree = "<group>";
+		};
+		EE0675A1247EFC3E0036DCBB /* Twine PlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE0675A2247EFC3E0036DCBB /* Twine_PlayerTests.swift */,
+				EE0675A4247EFC3E0036DCBB /* Info.plist */,
+			);
+			path = "Twine PlayerTests";
+			sourceTree = "<group>";
+		};
+		EE0675AC247EFC3E0036DCBB /* Twine PlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE0675AD247EFC3E0036DCBB /* Twine_PlayerUITests.swift */,
+				EE0675AF247EFC3E0036DCBB /* Info.plist */,
+			);
+			path = "Twine PlayerUITests";
+			sourceTree = "<group>";
+		};
+		EE0675BB247F94740036DCBB /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				EE067591247EFC3C0036DCBB /* LaucnhScreen.storyboard */,
+				EE06758F247EFC3C0036DCBB /* LaucnhScreenViewController.swift */,
+			);
+			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		EE0675BC247F983C0036DCBB /* Recourses */ = {
+			isa = PBXGroup;
+			children = (
+				EE0675BE247F986B0036DCBB /* Images */,
+				EE0675BD247F98480036DCBB /* Fonts */,
+			);
+			path = Recourses;
+			sourceTree = "<group>";
+		};
+		EE0675BD247F98480036DCBB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EE0675BF247F98970036DCBB /* SF-Pro-Text-Bold.otf */,
+				EE0675C8247FD9150036DCBB /* SF-Pro-Text-Medium.otf */,
+				EE0675CA247FD9650036DCBB /* SF-Pro-Text-Regular.otf */,
+				EE0675CB247FD9650036DCBB /* SF-Pro-Text-RegularItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EE0675BE247F986B0036DCBB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EE0675C6247FD8580036DCBB /* logo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		EE0675C1247F98A30036DCBB /* GameList */ = {
+			isa = PBXGroup;
+			children = (
+				EE0675CE24802C5E0036DCBB /* Game.storyboard */,
+				EE0675D424802DF40036DCBB /* GameListVIewController.swift */,
+				EE7572D52482D949008AD439 /* GameViewcontrollerExtenction.swift */,
+				EE0675D824802F7A0036DCBB /* TwineListParser.swift */,
+				EE0675D624802E070036DCBB /* GameShowViewController.swift */,
+				EE7572D724843598008AD439 /* WebViewController.swift */,
+			);
+			path = GameList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE067587247EFC3C0036DCBB /* Twine Player */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0675B2247EFC3E0036DCBB /* Build configuration list for PBXNativeTarget "Twine Player" */;
+			buildPhases = (
+				10150D988744D6A2FDDC48B0 /* [CP] Check Pods Manifest.lock */,
+				EE067584247EFC3C0036DCBB /* Sources */,
+				EE067585247EFC3C0036DCBB /* Frameworks */,
+				EE067586247EFC3C0036DCBB /* Resources */,
+				5A851F81D9D1B40A6393D002 /* [CP] Embed Pods Frameworks */,
+				EEF391A7248259A0006088FC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Twine Player";
+			productName = "Twine Player";
+			productReference = EE067588247EFC3C0036DCBB /* Twine Player.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE06759D247EFC3E0036DCBB /* Twine PlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0675B5247EFC3E0036DCBB /* Build configuration list for PBXNativeTarget "Twine PlayerTests" */;
+			buildPhases = (
+				EE06759A247EFC3E0036DCBB /* Sources */,
+				EE06759B247EFC3E0036DCBB /* Frameworks */,
+				EE06759C247EFC3E0036DCBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE0675A0247EFC3E0036DCBB /* PBXTargetDependency */,
+			);
+			name = "Twine PlayerTests";
+			productName = "Twine PlayerTests";
+			productReference = EE06759E247EFC3E0036DCBB /* Twine PlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE0675A8247EFC3E0036DCBB /* Twine PlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0675B8247EFC3E0036DCBB /* Build configuration list for PBXNativeTarget "Twine PlayerUITests" */;
+			buildPhases = (
+				EE0675A5247EFC3E0036DCBB /* Sources */,
+				EE0675A6247EFC3E0036DCBB /* Frameworks */,
+				EE0675A7247EFC3E0036DCBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE0675AB247EFC3E0036DCBB /* PBXTargetDependency */,
+			);
+			name = "Twine PlayerUITests";
+			productName = "Twine PlayerUITests";
+			productReference = EE0675A9247EFC3E0036DCBB /* Twine PlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE067580247EFC3C0036DCBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Petr Grakunov";
+				TargetAttributes = {
+					EE067587247EFC3C0036DCBB = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					EE06759D247EFC3E0036DCBB = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = EE067587247EFC3C0036DCBB;
+					};
+					EE0675A8247EFC3E0036DCBB = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = EE067587247EFC3C0036DCBB;
+					};
+				};
+			};
+			buildConfigurationList = EE067583247EFC3C0036DCBB /* Build configuration list for PBXProject "Twine Player" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE06757F247EFC3C0036DCBB;
+			productRefGroup = EE067589247EFC3C0036DCBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE067587247EFC3C0036DCBB /* Twine Player */,
+				EE06759D247EFC3E0036DCBB /* Twine PlayerTests */,
+				EE0675A8247EFC3E0036DCBB /* Twine PlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE067586247EFC3C0036DCBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0675CF24802C5E0036DCBB /* Game.storyboard in Resources */,
+				EE067595247EFC3E0036DCBB /* Assets.xcassets in Resources */,
+				EE0675C7247FD8580036DCBB /* logo.png in Resources */,
+				EE0675CD247FD9650036DCBB /* SF-Pro-Text-RegularItalic.otf in Resources */,
+				EE0675C9247FD9150036DCBB /* SF-Pro-Text-Medium.otf in Resources */,
+				EE067593247EFC3C0036DCBB /* LaucnhScreen.storyboard in Resources */,
+				EE0675C0247F98970036DCBB /* SF-Pro-Text-Bold.otf in Resources */,
+				EE0675CC247FD9650036DCBB /* SF-Pro-Text-Regular.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE06759C247EFC3E0036DCBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0675A7247EFC3E0036DCBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10150D988744D6A2FDDC48B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Twine Player-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A851F81D9D1B40A6393D002 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Twine Player/Pods-Twine Player-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Twine Player/Pods-Twine Player-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Twine Player/Pods-Twine Player-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE067584247EFC3C0036DCBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0675D724802E070036DCBB /* GameShowViewController.swift in Sources */,
+				EE0675D524802DF40036DCBB /* GameListVIewController.swift in Sources */,
+				EE067590247EFC3C0036DCBB /* LaucnhScreenViewController.swift in Sources */,
+				EE7572D62482D949008AD439 /* GameViewcontrollerExtenction.swift in Sources */,
+				EE06758C247EFC3C0036DCBB /* AppDelegate.swift in Sources */,
+				EE0675D924802F7A0036DCBB /* TwineListParser.swift in Sources */,
+				EE06758E247EFC3C0036DCBB /* SceneDelegate.swift in Sources */,
+				EE7572D824843598008AD439 /* WebViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE06759A247EFC3E0036DCBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0675A3247EFC3E0036DCBB /* Twine_PlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0675A5247EFC3E0036DCBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0675AE247EFC3E0036DCBB /* Twine_PlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE0675A0247EFC3E0036DCBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE067587247EFC3C0036DCBB /* Twine Player */;
+			targetProxy = EE06759F247EFC3E0036DCBB /* PBXContainerItemProxy */;
+		};
+		EE0675AB247EFC3E0036DCBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE067587247EFC3C0036DCBB /* Twine Player */;
+			targetProxy = EE0675AA247EFC3E0036DCBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE067591247EFC3C0036DCBB /* LaucnhScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE067592247EFC3C0036DCBB /* Base */,
+			);
+			name = LaucnhScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE0675B0247EFC3E0036DCBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE0675B1247EFC3E0036DCBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE0675B3247EFC3E0036DCBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B9291B206D1EBD78858D460 /* Pods-Twine Player.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7ZV7ME5774;
+				INFOPLIST_FILE = "Twine Player/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "je09.Twine-Player";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EE0675B4247EFC3E0036DCBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE798913B39D3EC6926ED96A /* Pods-Twine Player.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7ZV7ME5774;
+				INFOPLIST_FILE = "Twine Player/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "je09.Twine-Player";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EE0675B6247EFC3E0036DCBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7ZV7ME5774;
+				INFOPLIST_FILE = "Twine PlayerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "je09.Twine-PlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twine Player.app/Twine Player";
+			};
+			name = Debug;
+		};
+		EE0675B7247EFC3E0036DCBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7ZV7ME5774;
+				INFOPLIST_FILE = "Twine PlayerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "je09.Twine-PlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twine Player.app/Twine Player";
+			};
+			name = Release;
+		};
+		EE0675B9247EFC3E0036DCBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7ZV7ME5774;
+				INFOPLIST_FILE = "Twine PlayerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "je09.Twine-PlayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Twine Player";
+			};
+			name = Debug;
+		};
+		EE0675BA247EFC3E0036DCBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7ZV7ME5774;
+				INFOPLIST_FILE = "Twine PlayerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "je09.Twine-PlayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Twine Player";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE067583247EFC3C0036DCBB /* Build configuration list for PBXProject "Twine Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0675B0247EFC3E0036DCBB /* Debug */,
+				EE0675B1247EFC3E0036DCBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0675B2247EFC3E0036DCBB /* Build configuration list for PBXNativeTarget "Twine Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0675B3247EFC3E0036DCBB /* Debug */,
+				EE0675B4247EFC3E0036DCBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0675B5247EFC3E0036DCBB /* Build configuration list for PBXNativeTarget "Twine PlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0675B6247EFC3E0036DCBB /* Debug */,
+				EE0675B7247EFC3E0036DCBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0675B8247EFC3E0036DCBB /* Build configuration list for PBXNativeTarget "Twine PlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0675B9247EFC3E0036DCBB /* Debug */,
+				EE0675BA247EFC3E0036DCBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE067580247EFC3C0036DCBB /* Project object */;
+}
