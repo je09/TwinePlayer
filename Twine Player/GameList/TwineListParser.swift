@@ -14,10 +14,12 @@ import SwiftLog
 struct TwineGame {
     var title: String?
     var url: URL
+    var html: String?
     
     init( _ url: URL) {
         self.url = url
         if let fileContents = readFile(url){
+            self.html = fileContents
             let doc: Document = try! SwiftSoup.parse(fileContents)
             title = try! doc.title()
         }

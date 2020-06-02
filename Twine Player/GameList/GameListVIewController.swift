@@ -14,6 +14,8 @@ class GameListViewController: UIViewController {
     
     // List of twine games in Games directory
     var gameList: TwineList?
+    var delegate: GameViewControllerDelegate?
+    
     let refreshControl: UIRefreshControl = {
         let refresh = UIRefreshControl()
         refresh.addTarget(self, action: #selector(refresh(sender:)), for: .valueChanged)
@@ -30,6 +32,7 @@ class GameListViewController: UIViewController {
         super.viewDidLoad()
         
         gameListTableView.dataSource = self
+        gameListTableView.delegate = self
         
         self.createAppDirectory()
         gameList = parseFolder()
@@ -65,6 +68,23 @@ extension GameListViewController: UITableViewDataSource {
             tableView.deleteRows(at: [ indexPath ], with: .automatic)
             self.gameList?.list.remove(at: indexPath.row)
             tableView.endUpdates()
+        }
+    }
+}
+
+
+// MARK: - UITableViewDelegate
+
+extension GameListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        logw("Selected on row \(indexPath.row)")
+        if let game = self.gameList?.list[indexPath.row] {
+            logw("Game url: \(game.url)")
+
+            let browser = GameViewController()
+            browser.delegate = self
+            self.navigationController?.pushViewController(browser, animated: true)
+            browser.selectedGame(game)
         }
     }
 }
