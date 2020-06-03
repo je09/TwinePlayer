@@ -14,7 +14,6 @@ class GameListViewController: UIViewController {
     
     // List of twine games in Games directory
     var gameList: TwineList?
-    var delegate: GameViewControllerDelegate?
     
     let refreshControl: UIRefreshControl = {
         let refresh = UIRefreshControl()
@@ -37,6 +36,13 @@ class GameListViewController: UIViewController {
         self.createAppDirectory()
         gameList = parseFolder()
         gameListTableView.refreshControl = refreshControl
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ListToShow" {
+            let gameVC = segue.destination as! GameViewController
+            gameVC.game = sender as? TwineGame
+        }
     }
 
 }
@@ -80,11 +86,8 @@ extension GameListViewController: UITableViewDelegate {
         logw("Selected on row \(indexPath.row)")
         if let game = self.gameList?.list[indexPath.row] {
             logw("Game url: \(game.url)")
-
-            let browser = GameViewController()
-            browser.delegate = self
-            self.navigationController?.pushViewController(browser, animated: true)
-            browser.selectedGame(game)
+            
+            performSegue(withIdentifier: "ListToShow", sender: game)
         }
     }
 }

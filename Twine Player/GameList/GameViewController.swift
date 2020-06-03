@@ -12,9 +12,9 @@ import SwiftLog
 
 class GameViewController: UIViewController {
 
-    @IBOutlet var webViewBrowser: WKWebView?
-    var game: TwineGame!
-    var delegate: GameListViewController?
+    
+    @IBOutlet weak var webViewBrowser: WKWebView!
+    var game: TwineGame?
     
     override func viewDidAppear(_ animated: Bool) {
         
@@ -22,19 +22,17 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUI()
     }
-}
-
-protocol GameViewControllerDelegate {
-    func selectedGame(_ game: TwineGame)
-}
-
-extension GameViewController: GameViewControllerDelegate {
-    func selectedGame(_ game: TwineGame) {
-        logw("Got \(String(describing: game.url))")
-        if let web = webViewBrowser {
-            web.loadHTMLString(game.html!, baseURL: nil)
+    
+    func setUI() {
+        if let html = game?.html {
+            self.webViewBrowser.loadHTMLString(html, baseURL: nil)
+        } else {
+            let alert = UIAlertController(title: "Error", message: "Can't get a game", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
+            logw("No game!")
         }
-        
     }
 }

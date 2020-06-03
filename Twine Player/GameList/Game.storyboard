@@ -74,9 +74,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="UaN-ZQ-0Jy" kind="show" id="1Hn-RB-TXJ"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -100,6 +97,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="gameListTableView" destination="Lh3-yh-Umu" id="h4y-1j-jj3"/>
+                        <segue destination="UaN-ZQ-0Jy" kind="show" identifier="ListToShow" id="MBe-Y9-UmB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDn-az-2I4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -109,16 +107,17 @@
         <!--Show-->
         <scene sceneID="wZv-59-pig">
             <objects>
-                <viewController storyboardIdentifier="WebView" title="Show" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UaN-ZQ-0Jy" customClass="GameViewController" customModule="Twine_Player" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" title="Show" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UaN-ZQ-0Jy" customClass="GameViewController" customModule="Twine_Player" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jm2-hS-m9G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0at-QC-Cwe">
-                                <rect key="frame" x="0.0" y="90" width="414" height="806"/>
+                            <wkWebView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0at-QC-Cwe">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
+                                <wkWebViewConfiguration key="configuration" allowsPictureInPictureMediaPlayback="NO">
+                                    <dataDetectorTypes key="dataDetectorTypes"/>
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
@@ -147,8 +146,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <outlet property="WebViewBrowser" destination="0at-QC-Cwe" id="bdJ-Lk-Jub"/>
-                        <outlet property="webViewBrowser" destination="0at-QC-Cwe" id="Mjz-sR-dPh"/>
+                        <outlet property="webViewBrowser" destination="0at-QC-Cwe" id="SPA-5Y-MEi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9w-V6-7Wd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
