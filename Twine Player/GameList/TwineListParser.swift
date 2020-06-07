@@ -15,6 +15,7 @@ struct TwineGame {
     var title: String?
     var url: URL
     var html: String?
+    var backgroundColor: String?
     
     init( _ url: URL) {
         self.url = url
@@ -22,6 +23,7 @@ struct TwineGame {
             self.html = fileContents
             let doc: Document = try! SwiftSoup.parse(fileContents)
             title = try! doc.title()
+//            backgroundColor = try! doc.css
         }
     }
     

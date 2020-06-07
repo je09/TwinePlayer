@@ -25,14 +25,31 @@ class GameViewController: UIViewController {
         setUI()
     }
     
+    @IBAction func saveButton(_ sender: Any) {
+         saveState()
+    }
+    
+    
+    @IBAction func loadButton(_ sender: UIBarButtonItem) {
+    }
+    
     func setUI() {
         if let html = game?.html {
-            self.webViewBrowser.loadHTMLString(html, baseURL: nil)
+            logw("Loading of tbe hame")
+            self.webViewBrowser.loadFileURL(game!.url, allowingReadAccessTo: game!.url)
+            self.title = self.webViewBrowser.title
         } else {
             let alert = UIAlertController(title: "Error", message: "Can't get a game", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
             logw("No game!")
         }
+    }
+}
+
+extension GameViewController {
+    func saveState() {
+        let cookies = HTTPCookieStorage.shared.cookies
+        print("\(cookies)")
     }
 }
