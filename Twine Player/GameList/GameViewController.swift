@@ -34,10 +34,10 @@ class GameViewController: UIViewController {
     }
     
     func setUI() {
-        if let html = game?.html {
+        if let title = game?.title {
             logw("Loading of tbe hame")
             self.webViewBrowser.loadFileURL(game!.url, allowingReadAccessTo: game!.url)
-            self.title = self.webViewBrowser.title
+            self.title = title
         } else {
             let alert = UIAlertController(title: "Error", message: "Can't get a game", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))

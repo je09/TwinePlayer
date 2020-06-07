@@ -14,16 +14,16 @@ import SwiftLog
 struct TwineGame {
     var title: String?
     var url: URL
-    var html: String?
-    var backgroundColor: String?
+    var engine: String?
     
     init( _ url: URL) {
         self.url = url
         if let fileContents = readFile(url){
-            self.html = fileContents
             let doc: Document = try! SwiftSoup.parse(fileContents)
-            title = try! doc.title()
-//            backgroundColor = try! doc.css
+            let twineData = try! doc.select("tw-storydata")
+            
+            self.title = try! twineData.attr("name")
+            self.engine = try! twineData.attr("format")
         }
     }
     
