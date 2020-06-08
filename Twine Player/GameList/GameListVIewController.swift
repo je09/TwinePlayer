@@ -89,5 +89,6 @@ extension GameListViewController: UITableViewDelegate {
             
             performSegue(withIdentifier: "ListToShow", sender: game)
         }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
