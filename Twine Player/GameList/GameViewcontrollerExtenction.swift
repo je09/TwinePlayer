@@ -74,7 +74,7 @@ extension GameListViewController{
                     if gameDecodedList[path] == nil {
                         logw("Wasn't synced")
                         game = TwineGame(path)
-                    } else if gameDecodedList != nil {
+                    } else {
                         logw("Was synced")
                         game = gameDecodedList[path]
                     }

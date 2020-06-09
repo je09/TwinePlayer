@@ -22,7 +22,7 @@
 		EE0675CF24802C5E0036DCBB /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0675CE24802C5E0036DCBB /* Game.storyboard */; };
 		EE0675D524802DF40036DCBB /* GameListVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0675D424802DF40036DCBB /* GameListVIewController.swift */; };
 		EE0675D924802F7A0036DCBB /* TwineListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0675D824802F7A0036DCBB /* TwineListParser.swift */; };
-		EE2DB1B22487CEC000C85745 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA02D972487C6480007C8C1 /* WebKit.framework */; };
+		EE20229624901D6800D90449 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA02D972487C6480007C8C1 /* WebKit.framework */; };
 		EE7572D62482D949008AD439 /* GameViewcontrollerExtenction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7572D52482D949008AD439 /* GameViewcontrollerExtenction.swift */; };
 		EE8B6A63248E719700916B65 /* getHtml.js in Resources */ = {isa = PBXBuildFile; fileRef = EE8B6A61248E719700916B65 /* getHtml.js */; };
 		EE8B6A64248E719700916B65 /* injectHtml.js in Resources */ = {isa = PBXBuildFile; fileRef = EE8B6A62248E719700916B65 /* injectHtml.js */; };
@@ -101,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE2DB1B22487CEC000C85745 /* WebKit.framework in Frameworks */,
+				EE20229624901D6800D90449 /* WebKit.framework in Frameworks */,
 				EEF391A5248259A0006088FC /* Pods_Twine_Player.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

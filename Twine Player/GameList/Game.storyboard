@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N3m-8g-LOu">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N3m-8g-LOu">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -23,15 +23,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Twine Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OZ-Ok-ojE">
-                                <rect key="frame" x="133" y="35" width="148" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twine Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OZ-Ok-ojE">
+                                <rect key="frame" x="0.0" y="35" width="414" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="WHc-Wt-tux"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There will be general support info and stuff" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOE-oK-2aR">
+                                <rect key="frame" x="0.0" y="163" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7OZ-Ok-ojE" firstAttribute="top" secondItem="Myd-zB-YEa" secondAttribute="top" constant="35" id="90n-Y8-Rhq"/>
+                            <constraint firstItem="Myd-zB-YEa" firstAttribute="trailing" secondItem="7OZ-Ok-ojE" secondAttribute="trailing" id="I0K-nh-0Qu"/>
+                            <constraint firstAttribute="trailing" secondItem="QOE-oK-2aR" secondAttribute="trailing" id="ZLK-qR-NnM"/>
+                            <constraint firstItem="QOE-oK-2aR" firstAttribute="leading" secondItem="Myd-zB-YEa" secondAttribute="leading" id="nxa-aY-liu"/>
+                            <constraint firstItem="7OZ-Ok-ojE" firstAttribute="leading" secondItem="Myd-zB-YEa" secondAttribute="leading" id="ql6-9L-ai7"/>
+                            <constraint firstItem="QOE-oK-2aR" firstAttribute="top" secondItem="7OZ-Ok-ojE" secondAttribute="bottom" constant="100" id="yfN-AG-OIt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Myd-zB-YEa"/>
                     </view>
                     <navigationItem key="navigationItem" id="rKd-aG-lJ0"/>
@@ -71,16 +87,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lh3-yh-Umu">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lh3-yh-Umu">
                                 <rect key="frame" x="0.0" y="140" width="414" height="756"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Cai-Z6-8vI">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cai-Z6-8vI" id="yVN-lG-eVG">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -89,15 +104,23 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Lh3-yh-Umu" firstAttribute="trailing" secondItem="QCt-EJ-cWh" secondAttribute="trailing" id="GmQ-Nk-HgM"/>
+                            <constraint firstItem="Lh3-yh-Umu" firstAttribute="centerX" secondItem="fwO-UI-xxN" secondAttribute="centerX" id="gmS-Jk-uaQ"/>
+                            <constraint firstItem="Lh3-yh-Umu" firstAttribute="top" secondItem="QCt-EJ-cWh" secondAttribute="top" id="oSV-nO-9eo"/>
+                            <constraint firstAttribute="bottom" secondItem="Lh3-yh-Umu" secondAttribute="bottom" id="ur0-Rb-NbM"/>
+                            <constraint firstItem="Lh3-yh-Umu" firstAttribute="leading" secondItem="QCt-EJ-cWh" secondAttribute="leading" id="yrW-cF-gLP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QCt-EJ-cWh"/>
                     </view>
                     <navigationItem key="navigationItem" title="Games:" id="4Lp-PW-me6">
-                        <barButtonItem key="leftBarButtonItem" enabled="NO" style="plain" id="MuR-NS-ZmT">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="MuR-NS-ZmT">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1tX-7h-oep">
                                 <rect key="frame" x="20" y="4" width="92" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="20"/>
-                                <state key="normal" title="Settings"/>
+                                <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="About"/>
                                 <connections>
                                     <segue destination="uIt-bv-6Sw" kind="popoverPresentation" popoverAnchorView="1tX-7h-oep" id="dp8-LZ-B11">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
@@ -123,9 +146,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0at-QC-Cwe">
+                            <wkWebView multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0at-QC-Cwe">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <wkWebViewConfiguration key="configuration" allowsPictureInPictureMediaPlayback="NO">
                                     <dataDetectorTypes key="dataDetectorTypes" none="YES"/>
@@ -135,6 +157,13 @@
                             </wkWebView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="0at-QC-Cwe" firstAttribute="top" secondItem="Jm2-hS-m9G" secondAttribute="top" id="21L-KO-FEa"/>
+                            <constraint firstAttribute="bottom" secondItem="0at-QC-Cwe" secondAttribute="bottom" id="2fm-jI-rik"/>
+                            <constraint firstItem="0at-QC-Cwe" firstAttribute="trailing" secondItem="2mO-cj-m8y" secondAttribute="trailing" id="PJg-1U-Ati"/>
+                            <constraint firstItem="0at-QC-Cwe" firstAttribute="leading" secondItem="2mO-cj-m8y" secondAttribute="leading" id="ccS-as-JHd"/>
+                            <constraint firstItem="0at-QC-Cwe" firstAttribute="centerY" secondItem="Jm2-hS-m9G" secondAttribute="centerY" id="l4S-lW-cba"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2mO-cj-m8y"/>
                     </view>
                     <navigationItem key="navigationItem" title="Game" largeTitleDisplayMode="never" id="LG0-nH-1fl">
