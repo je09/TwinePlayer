@@ -38,9 +38,28 @@ extension GameListViewController{
         }
     }
     
+    func parseUserArray(_ userArray: [Data]?) -> [URL:TwineGame] {
+        var result = [URL: TwineGame]()
+        
+        if userArray != nil {
+            for item in userArray! {
+                if let decoded = try? JSONDecoder().decode(TwineGame.self, from: item) {
+                    result[decoded.url] = decoded
+                }
+            }
+        }
+        
+        return result
+    }
+    
     func parseFolder() -> TwineList {
         let appUrl = returnAppDir()
         var list: TwineList = TwineList()
+        
+        let gameList: [Data]? = UserDefaults.standard.array(forKey: "gameList") as? [Data]
+        let gameDecodedList = parseUserArray(gameList)
+        
+        var newGameList = [Data]()
         
         if FileManager.default.fileExists(atPath: appUrl.path) {
             do {
@@ -49,12 +68,27 @@ extension GameListViewController{
                     logw("Checking \"\(item)\"")
                     let path = appUrl.appendingPathComponent(item)
                     logw("Calling for \"\(path.path)\"")
-                    list.append(TwineGame(path))
+                    
+                    var game: TwineGame?
+                    
+                    if gameDecodedList[path] == nil {
+                        logw("Wasn't synced")
+                        game = TwineGame(path)
+                    } else if gameDecodedList != nil {
+                        logw("Was synced")
+                        game = gameDecodedList[path]
+                    }
+                    
+                    newGameList.append(try! JSONEncoder().encode(game))
+                    list.append(game!)
                 }
             } catch let error as NSError {
                 logw(error.localizedDescription)
             }
         }
+        
+        UserDefaults.standard.set(newGameList, forKey: "gameList")
+        
         logw("\(list.count) elements")
         
         return list

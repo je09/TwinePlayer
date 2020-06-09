@@ -1,0 +1,1 @@
+document.getElementsByTagName("tw-passage")[0].innerHTML

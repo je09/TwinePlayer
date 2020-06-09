@@ -11,7 +11,7 @@ import SwiftSoup
 import SwiftLog
 
 
-struct TwineGame {
+struct TwineGame: Codable {
     var title: String?
     var url: URL
     var engine: String?

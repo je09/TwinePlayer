@@ -8,6 +8,7 @@ target 'Twine Player' do
   # Pods for Twine Player
   pod 'SwiftSoup'
   pod 'SwiftLog'
+  pod 'SwiftHash'
 
   # target 'Twine PlayerTests' do
   #   inherit! :search_paths
