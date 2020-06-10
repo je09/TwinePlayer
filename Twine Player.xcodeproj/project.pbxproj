@@ -24,8 +24,7 @@
 		EE0675D924802F7A0036DCBB /* TwineListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0675D824802F7A0036DCBB /* TwineListParser.swift */; };
 		EE20229624901D6800D90449 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA02D972487C6480007C8C1 /* WebKit.framework */; };
 		EE7572D62482D949008AD439 /* GameViewcontrollerExtenction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7572D52482D949008AD439 /* GameViewcontrollerExtenction.swift */; };
-		EE8B6A63248E719700916B65 /* getHtml.js in Resources */ = {isa = PBXBuildFile; fileRef = EE8B6A61248E719700916B65 /* getHtml.js */; };
-		EE8B6A64248E719700916B65 /* injectHtml.js in Resources */ = {isa = PBXBuildFile; fileRef = EE8B6A62248E719700916B65 /* injectHtml.js */; };
+		EE8B6A682490DD3600916B65 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8B6A672490DD3600916B65 /* InfoViewController.swift */; };
 		EEA02D942486D8050007C8C1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA02D932486D8050007C8C1 /* GameViewController.swift */; };
 		EEAF0B8F248E592900D08BC0 /* Icon1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = EEAF0B8E248E592900D08BC0 /* Icon1024x1024.png */; };
 		EEF391A5248259A0006088FC /* Pods_Twine_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE6D752BAF0ABA660EAE999 /* Pods_Twine_Player.framework */; };
@@ -89,8 +88,7 @@
 		EE0675D424802DF40036DCBB /* GameListVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListVIewController.swift; sourceTree = "<group>"; };
 		EE0675D824802F7A0036DCBB /* TwineListParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwineListParser.swift; sourceTree = "<group>"; };
 		EE7572D52482D949008AD439 /* GameViewcontrollerExtenction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewcontrollerExtenction.swift; sourceTree = "<group>"; };
-		EE8B6A61248E719700916B65 /* getHtml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = getHtml.js; sourceTree = "<group>"; };
-		EE8B6A62248E719700916B65 /* injectHtml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = injectHtml.js; sourceTree = "<group>"; };
+		EE8B6A672490DD3600916B65 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		EEA02D932486D8050007C8C1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		EEA02D972487C6480007C8C1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		EEAF0B8E248E592900D08BC0 /* Icon1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon1024x1024.png; sourceTree = "<group>"; };
@@ -207,7 +205,6 @@
 		EE0675BC247F983C0036DCBB /* Recourses */ = {
 			isa = PBXGroup;
 			children = (
-				EE8B6A60248E710600916B65 /* JS */,
 				EE0675BE247F986B0036DCBB /* Images */,
 				EE0675BD247F98480036DCBB /* Fonts */,
 			);
@@ -241,18 +238,10 @@
 				EE0675D424802DF40036DCBB /* GameListVIewController.swift */,
 				EE7572D52482D949008AD439 /* GameViewcontrollerExtenction.swift */,
 				EEA02D932486D8050007C8C1 /* GameViewController.swift */,
+				EE8B6A672490DD3600916B65 /* InfoViewController.swift */,
 				EE0675D824802F7A0036DCBB /* TwineListParser.swift */,
 			);
 			path = GameList;
-			sourceTree = "<group>";
-		};
-		EE8B6A60248E710600916B65 /* JS */ = {
-			isa = PBXGroup;
-			children = (
-				EE8B6A61248E719700916B65 /* getHtml.js */,
-				EE8B6A62248E719700916B65 /* injectHtml.js */,
-			);
-			path = JS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,10 +353,8 @@
 			files = (
 				EE0675CF24802C5E0036DCBB /* Game.storyboard in Resources */,
 				EE067595247EFC3E0036DCBB /* Assets.xcassets in Resources */,
-				EE8B6A63248E719700916B65 /* getHtml.js in Resources */,
 				EE0675C7247FD8580036DCBB /* logo.png in Resources */,
 				EE0675CD247FD9650036DCBB /* SF-Pro-Text-RegularItalic.otf in Resources */,
-				EE8B6A64248E719700916B65 /* injectHtml.js in Resources */,
 				EE0675C9247FD9150036DCBB /* SF-Pro-Text-Medium.otf in Resources */,
 				EEAF0B8F248E592900D08BC0 /* Icon1024x1024.png in Resources */,
 				EE067593247EFC3C0036DCBB /* LaucnhScreen.storyboard in Resources */,
@@ -445,6 +432,7 @@
 				EE06758C247EFC3C0036DCBB /* AppDelegate.swift in Sources */,
 				EEA02D942486D8050007C8C1 /* GameViewController.swift in Sources */,
 				EE0675D924802F7A0036DCBB /* TwineListParser.swift in Sources */,
+				EE8B6A682490DD3600916B65 /* InfoViewController.swift in Sources */,
 				EE06758E247EFC3C0036DCBB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

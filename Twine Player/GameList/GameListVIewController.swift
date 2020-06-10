@@ -30,6 +30,8 @@ class GameListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        welcomeMessage()
+        
         gameListTableView.dataSource = self
         gameListTableView.delegate = self
         
@@ -46,6 +48,28 @@ class GameListViewController: UIViewController {
     }
 
 }
+
+// MARK: - First run function
+
+extension GameListViewController {
+    func welcomeMessage() {
+        let firstTime = UserDefaults.standard.bool(forKey: "firstTime")
+        if !firstTime{
+            let message = "Hello and welcome to the Twine Player. I hope, you would find this "
+                        + "application useful. \nHowever, I wan't to point, that save and load "
+                        + "functionality may not work in some Twine stories. It caused because "
+                        + "of different engines used by developers. I wasn't able to find a "
+                        + "universal way to implement this functions, but I'm trying to develop it. "
+                        + "Even when you sleep. \nHave fun and read good stories."
+            
+            let alert = UIAlertController(title: "Welcome", message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true)
+            UserDefaults.standard.set(true, forKey: "firstTime")
+        }
+    }
+}
+
 
 // MARK: - UITableViewDataSource
 

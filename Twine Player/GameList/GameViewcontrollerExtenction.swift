@@ -9,7 +9,7 @@
 import Foundation
 import SwiftLog
 
-
+// Parsing functionality
 extension GameListViewController{
     private func returnAppDir() -> URL {
         let directoryName = "Games"
@@ -92,5 +92,23 @@ extension GameListViewController{
         logw("\(list.count) elements")
         
         return list
+    }
+    
+    func importData(_ url: URL?) {
+        logw("Trying to import data")
+        var newPathUrl = returnAppDir()
+        guard url != nil else {return}
+        let fileName = url!.lastPathComponent
+        
+        newPathUrl.appendPathComponent(fileName, isDirectory: false)
+        logw("Copy new file to \(newPathUrl)")
+        
+        do {
+            try FileManager.default.copyItem(at: url!, to: newPathUrl)
+        } catch let error as NSError {
+            logw("Unable to copy item, \(error.localizedDescription) occured")
+        }
+        self.gameList = parseFolder()
+        
     }
 }

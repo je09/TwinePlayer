@@ -10,7 +10,7 @@ import Foundation
 import SwiftSoup
 import SwiftLog
 
-
+// Codable – may be converted onto date object
 struct TwineGame: Codable {
     var title: String?
     var url: URL

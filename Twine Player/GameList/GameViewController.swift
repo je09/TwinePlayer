@@ -57,42 +57,16 @@ class GameViewController: UIViewController {
     }
 }
 
+// Save and Load Functions
+
 extension GameViewController {
     func saveState(autoSave auto: Bool) {
         logw("Trying to save")
-        let filepath = Bundle.main.path(forResource: "getHtml", ofType: "js")
-        
-        var saveName = "save_"
-        if auto {
-            saveName = "autosave_"
-        }
-        saveName += "\(String(describing: self.game!.title))"
-        
-        do {
-            let js = try String(contentsOfFile: filepath!)
-            self.webViewBrowser.evaluateJavaScript(js, completionHandler: {(html: Any?, error: Error?) in UserDefaults.standard.set(html, forKey: saveName)})
-            logw("Saved")
-        } catch {
-            logw("Couldn't load getHtml.js")
-        }
+
     }
     
     func loadState(autoLoad auto: Bool) {
         logw("Trying to load")
-        let filepath = Bundle.main.path(forResource: "injectHtml", ofType: "js")
         
-        var loadName = "save_"
-               if auto {
-                   loadName = "autosave_"
-               }
-        loadName += "\(String(describing: self.game!.title))"
-        
-        do {
-            let js = try String(contentsOfFile: filepath!)
-            self.webViewBrowser.loadHTMLString(UserDefaults.standard.object(forKey: loadName) as! String, baseURL: self.game!.url)
-            logw("Loaded \(UserDefaults.standard.object(forKey: loadName) as! String)")
-        } catch {
-            logw("Couldn't load getHtml.js")
-        }
     }
 }

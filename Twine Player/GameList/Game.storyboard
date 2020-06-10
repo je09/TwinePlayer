@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N3m-8g-LOu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N3m-8g-LOu">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -13,12 +12,19 @@
         <array key="SF-Pro-Text-Regular.otf">
             <string>SFProText-Regular</string>
         </array>
+        <array key="SF-Pro-Text-RegularItalic.otf">
+            <string>SFProText-RegularItalic</string>
+        </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Info View Controller-->
         <scene sceneID="znP-dT-p8P">
             <objects>
-                <viewController id="uIt-bv-6Sw" sceneMemberID="viewController">
+                <viewController id="uIt-bv-6Sw" customClass="InfoViewController" customModule="Twine_Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ssr-WX-VFT"/>
+                        <viewControllerLayoutGuide type="bottom" id="CP6-gq-0bf"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MMa-Qx-bHV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,34 +38,87 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There will be general support info and stuff" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOE-oK-2aR">
-                                <rect key="frame" x="0.0" y="163" width="414" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're welcome to report any bug you found at jeto.studios@gmail.com anytime." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOE-oK-2aR">
+                                <rect key="frame" x="0.0" y="93" width="414" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" name="SFProText-RegularItalic" family="SF Pro Text" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How can I copy a story?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJr-ZU-RPk">
+                                <rect key="frame" x="106" y="156.66666666666666" width="202" height="21"/>
+                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How can I delete a story?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4o-kK-on7">
+                                <rect key="frame" x="100" y="258.33333333333331" width="214" height="21"/>
+                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where can I find an additional info?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gnz-Jn-Wxw">
+                                <rect key="frame" x="57" y="360" width="300" height="21"/>
+                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You may copy story manually using Files app or using file association from &quot;Share&quot; menu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5a-sC-xYS">
+                                <rect key="frame" x="0.0" y="197.66666666666666" width="414" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just swipe it out 'till you see &quot;delete&quot; or remove it from Files app." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peZ-ih-msn">
+                                <rect key="frame" x="0.0" y="299.33333333333331" width="414" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CX1-46-K1M">
+                                <rect key="frame" x="0.0" y="401" width="414" height="61"/>
+                                <string key="text">There is an official Twine site, which contains a lot of useful information about Twine, game building and etc. Site address: http://twinery.org/</string>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="7OZ-Ok-ojE" firstAttribute="top" secondItem="Myd-zB-YEa" secondAttribute="top" constant="35" id="90n-Y8-Rhq"/>
-                            <constraint firstItem="Myd-zB-YEa" firstAttribute="trailing" secondItem="7OZ-Ok-ojE" secondAttribute="trailing" id="I0K-nh-0Qu"/>
+                            <constraint firstItem="CX1-46-K1M" firstAttribute="leading" secondItem="MMa-Qx-bHV" secondAttribute="leading" id="1Lb-0b-Hwj"/>
+                            <constraint firstItem="P5a-sC-xYS" firstAttribute="top" secondItem="TJr-ZU-RPk" secondAttribute="bottom" constant="20" id="4ba-Nm-PTD"/>
+                            <constraint firstItem="TJr-ZU-RPk" firstAttribute="top" secondItem="QOE-oK-2aR" secondAttribute="bottom" constant="30" id="76e-SG-qwp"/>
+                            <constraint firstItem="7OZ-Ok-ojE" firstAttribute="top" secondItem="ssr-WX-VFT" secondAttribute="bottom" constant="35" id="90n-Y8-Rhq"/>
+                            <constraint firstItem="Gnz-Jn-Wxw" firstAttribute="top" secondItem="peZ-ih-msn" secondAttribute="bottom" constant="20" id="D6g-gw-CAI"/>
+                            <constraint firstAttribute="trailing" secondItem="7OZ-Ok-ojE" secondAttribute="trailing" id="I0K-nh-0Qu"/>
+                            <constraint firstItem="Gnz-Jn-Wxw" firstAttribute="centerX" secondItem="MMa-Qx-bHV" secondAttribute="centerX" id="LMx-Ti-slF"/>
+                            <constraint firstAttribute="trailing" secondItem="P5a-sC-xYS" secondAttribute="trailing" id="S5d-aA-6zP"/>
+                            <constraint firstAttribute="trailing" secondItem="peZ-ih-msn" secondAttribute="trailing" id="SJK-nG-zeF"/>
+                            <constraint firstItem="CX1-46-K1M" firstAttribute="top" secondItem="Gnz-Jn-Wxw" secondAttribute="bottom" constant="20" id="SMA-3g-Ram"/>
+                            <constraint firstItem="P5a-sC-xYS" firstAttribute="leading" secondItem="MMa-Qx-bHV" secondAttribute="leading" id="UMh-Z9-GyZ"/>
+                            <constraint firstItem="peZ-ih-msn" firstAttribute="centerX" secondItem="MMa-Qx-bHV" secondAttribute="centerX" id="VH4-AG-xJZ"/>
                             <constraint firstAttribute="trailing" secondItem="QOE-oK-2aR" secondAttribute="trailing" id="ZLK-qR-NnM"/>
-                            <constraint firstItem="QOE-oK-2aR" firstAttribute="leading" secondItem="Myd-zB-YEa" secondAttribute="leading" id="nxa-aY-liu"/>
-                            <constraint firstItem="7OZ-Ok-ojE" firstAttribute="leading" secondItem="Myd-zB-YEa" secondAttribute="leading" id="ql6-9L-ai7"/>
-                            <constraint firstItem="QOE-oK-2aR" firstAttribute="top" secondItem="7OZ-Ok-ojE" secondAttribute="bottom" constant="100" id="yfN-AG-OIt"/>
+                            <constraint firstItem="peZ-ih-msn" firstAttribute="top" secondItem="K4o-kK-on7" secondAttribute="bottom" constant="20" id="gik-ZP-oDW"/>
+                            <constraint firstItem="peZ-ih-msn" firstAttribute="leading" secondItem="MMa-Qx-bHV" secondAttribute="leading" id="nJX-80-Zwz"/>
+                            <constraint firstItem="K4o-kK-on7" firstAttribute="top" secondItem="P5a-sC-xYS" secondAttribute="bottom" constant="20" id="oYh-tK-K4D"/>
+                            <constraint firstItem="QOE-oK-2aR" firstAttribute="centerX" secondItem="MMa-Qx-bHV" secondAttribute="centerX" id="oyo-sN-NOG"/>
+                            <constraint firstAttribute="trailing" secondItem="CX1-46-K1M" secondAttribute="trailing" id="p0b-r5-ej5"/>
+                            <constraint firstItem="CX1-46-K1M" firstAttribute="centerX" secondItem="MMa-Qx-bHV" secondAttribute="centerX" id="q7h-cC-vNk"/>
+                            <constraint firstItem="7OZ-Ok-ojE" firstAttribute="leading" secondItem="MMa-Qx-bHV" secondAttribute="leading" id="ql6-9L-ai7"/>
+                            <constraint firstItem="TJr-ZU-RPk" firstAttribute="centerX" secondItem="MMa-Qx-bHV" secondAttribute="centerX" id="qsH-zi-g9m"/>
+                            <constraint firstItem="K4o-kK-on7" firstAttribute="centerX" secondItem="MMa-Qx-bHV" secondAttribute="centerX" id="vaq-ll-7QR"/>
+                            <constraint firstItem="QOE-oK-2aR" firstAttribute="top" secondItem="7OZ-Ok-ojE" secondAttribute="bottom" constant="30" id="yfN-AG-OIt"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Myd-zB-YEa"/>
                     </view>
                     <navigationItem key="navigationItem" id="rKd-aG-lJ0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iwi-4I-ier" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="87" y="-520"/>
+            <point key="canvasLocation" x="87" y="-510"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="062-qa-PnV">
             <objects>
-                <navigationController id="N3m-8g-LOu" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationGameViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N3m-8g-LOu" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Yaf-u3-dHE">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -76,6 +135,10 @@
         <scene sceneID="rrv-ys-XMV">
             <objects>
                 <viewController title="List" id="6mp-kd-c1G" customClass="GameListViewController" customModule="Twine_Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oFG-Rg-v2u"/>
+                        <viewControllerLayoutGuide type="bottom" id="Woa-ti-Tjb"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fwO-UI-xxN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,22 +168,22 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Lh3-yh-Umu" firstAttribute="trailing" secondItem="QCt-EJ-cWh" secondAttribute="trailing" id="GmQ-Nk-HgM"/>
+                            <constraint firstItem="Lh3-yh-Umu" firstAttribute="trailing" secondItem="fwO-UI-xxN" secondAttribute="trailing" id="GmQ-Nk-HgM"/>
                             <constraint firstItem="Lh3-yh-Umu" firstAttribute="centerX" secondItem="fwO-UI-xxN" secondAttribute="centerX" id="gmS-Jk-uaQ"/>
-                            <constraint firstItem="Lh3-yh-Umu" firstAttribute="top" secondItem="QCt-EJ-cWh" secondAttribute="top" id="oSV-nO-9eo"/>
+                            <constraint firstItem="Lh3-yh-Umu" firstAttribute="top" secondItem="oFG-Rg-v2u" secondAttribute="bottom" id="oSV-nO-9eo"/>
                             <constraint firstAttribute="bottom" secondItem="Lh3-yh-Umu" secondAttribute="bottom" id="ur0-Rb-NbM"/>
-                            <constraint firstItem="Lh3-yh-Umu" firstAttribute="leading" secondItem="QCt-EJ-cWh" secondAttribute="leading" id="yrW-cF-gLP"/>
+                            <constraint firstItem="Lh3-yh-Umu" firstAttribute="leading" secondItem="fwO-UI-xxN" secondAttribute="leading" id="yrW-cF-gLP"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="QCt-EJ-cWh"/>
                     </view>
                     <navigationItem key="navigationItem" title="Games:" id="4Lp-PW-me6">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="MuR-NS-ZmT">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1tX-7h-oep">
-                                <rect key="frame" x="20" y="4" width="92" height="36"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="MuR-NS-ZmT">
+                            <button key="customView" opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1tX-7h-oep">
+                                <rect key="frame" x="364.33333333333331" y="7.9999999999999982" width="29.666666666666686" height="28.333333333333329"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="20"/>
-                                <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="About"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" image="info.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
+                                </state>
                                 <connections>
                                     <segue destination="uIt-bv-6Sw" kind="popoverPresentation" popoverAnchorView="1tX-7h-oep" id="dp8-LZ-B11">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
@@ -142,6 +205,10 @@
         <scene sceneID="wZv-59-pig">
             <objects>
                 <viewController storyboardIdentifier="GameViewController" title="Show" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UaN-ZQ-0Jy" customClass="GameViewController" customModule="Twine_Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wKy-Rl-vUs"/>
+                        <viewControllerLayoutGuide type="bottom" id="cGj-As-IEp"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Jm2-hS-m9G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,11 +227,10 @@
                         <constraints>
                             <constraint firstItem="0at-QC-Cwe" firstAttribute="top" secondItem="Jm2-hS-m9G" secondAttribute="top" id="21L-KO-FEa"/>
                             <constraint firstAttribute="bottom" secondItem="0at-QC-Cwe" secondAttribute="bottom" id="2fm-jI-rik"/>
-                            <constraint firstItem="0at-QC-Cwe" firstAttribute="trailing" secondItem="2mO-cj-m8y" secondAttribute="trailing" id="PJg-1U-Ati"/>
-                            <constraint firstItem="0at-QC-Cwe" firstAttribute="leading" secondItem="2mO-cj-m8y" secondAttribute="leading" id="ccS-as-JHd"/>
+                            <constraint firstItem="0at-QC-Cwe" firstAttribute="trailing" secondItem="Jm2-hS-m9G" secondAttribute="trailing" id="PJg-1U-Ati"/>
+                            <constraint firstItem="0at-QC-Cwe" firstAttribute="leading" secondItem="Jm2-hS-m9G" secondAttribute="leading" id="ccS-as-JHd"/>
                             <constraint firstItem="0at-QC-Cwe" firstAttribute="centerY" secondItem="Jm2-hS-m9G" secondAttribute="centerY" id="l4S-lW-cba"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="2mO-cj-m8y"/>
                     </view>
                     <navigationItem key="navigationItem" title="Game" largeTitleDisplayMode="never" id="LG0-nH-1fl">
                         <rightBarButtonItems>
@@ -202,4 +268,7 @@
             <point key="canvasLocation" x="86.956521739130437" y="205.58035714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
