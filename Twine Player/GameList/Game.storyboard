@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N3m-8g-LOu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N3m-8g-LOu">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -45,38 +45,40 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How can I copy a story?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJr-ZU-RPk">
-                                <rect key="frame" x="106" y="156.66666666666666" width="202" height="21"/>
+                                <rect key="frame" x="106.33333333333333" y="156.66666666666666" width="201.66666666666669" height="20"/>
                                 <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How can I delete a story?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4o-kK-on7">
-                                <rect key="frame" x="100" y="258.33333333333331" width="214" height="21"/>
+                                <rect key="frame" x="100" y="257.33333333333331" width="214" height="20"/>
                                 <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where can I find an additional info?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gnz-Jn-Wxw">
-                                <rect key="frame" x="57" y="360" width="300" height="21"/>
+                                <rect key="frame" x="57.333333333333343" y="358" width="299.66666666666663" height="20"/>
                                 <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You may copy story manually using Files app or using file association from &quot;Share&quot; menu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5a-sC-xYS">
-                                <rect key="frame" x="0.0" y="197.66666666666666" width="414" height="40.666666666666657"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You may copy story manually using Files app or with file association from &quot;Share&quot; menu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5a-sC-xYS">
+                                <rect key="frame" x="0.0" y="196.66666666666666" width="414" height="40.666666666666657"/>
                                 <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just swipe it out 'till you see &quot;delete&quot; or remove it from Files app." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peZ-ih-msn">
-                                <rect key="frame" x="0.0" y="299.33333333333331" width="414" height="40.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peZ-ih-msn">
+                                <rect key="frame" x="0.0" y="297.33333333333331" width="414" height="40.666666666666686"/>
+                                <string key="text">Just swipe it out 'till you see "Delete". 
+Yeap, that's so easy.</string>
                                 <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CX1-46-K1M">
-                                <rect key="frame" x="0.0" y="401" width="414" height="61"/>
-                                <string key="text">There is an official Twine site, which contains a lot of useful information about Twine, game building and etc. Site address: http://twinery.org/</string>
+                                <rect key="frame" x="0.0" y="398" width="414" height="61"/>
+                                <string key="text">There is an official Twine site, which contains a lot of useful information about Twine, game building and etc. (http://twinery.org/)</string>
                                 <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -213,9 +215,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0at-QC-Cwe">
+                            <wkWebView opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0at-QC-Cwe">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <wkWebViewConfiguration key="configuration" allowsPictureInPictureMediaPlayback="NO">
                                     <dataDetectorTypes key="dataDetectorTypes" none="YES"/>
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -232,33 +233,7 @@
                             <constraint firstItem="0at-QC-Cwe" firstAttribute="centerY" secondItem="Jm2-hS-m9G" secondAttribute="centerY" id="l4S-lW-cba"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Game" largeTitleDisplayMode="never" id="LG0-nH-1fl">
-                        <rightBarButtonItems>
-                            <barButtonItem style="plain" id="4Yb-6t-1gj">
-                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MdM-t3-dHd">
-                                    <rect key="frame" x="348" y="4" width="46" height="36"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
-                                    <state key="normal" title="Load"/>
-                                    <connections>
-                                        <action selector="loadButton:" destination="UaN-ZQ-0Jy" eventType="touchUpInside" id="UEZ-3H-BYd"/>
-                                        <action selector="saveButton:" destination="UaN-ZQ-0Jy" eventType="touchUpInside" id="Ba8-Yu-20b"/>
-                                    </connections>
-                                </button>
-                            </barButtonItem>
-                            <barButtonItem style="plain" id="6zW-b5-yf1">
-                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fed-Qi-scX">
-                                    <rect key="frame" x="294" y="4" width="46" height="36"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
-                                    <state key="normal" title="Save"/>
-                                    <connections>
-                                        <action selector="saveButton:" destination="UaN-ZQ-0Jy" eventType="touchUpInside" id="ocb-aT-XHn"/>
-                                    </connections>
-                                </button>
-                            </barButtonItem>
-                        </rightBarButtonItems>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Game" largeTitleDisplayMode="never" id="LG0-nH-1fl"/>
                     <connections>
                         <outlet property="webViewBrowser" destination="0at-QC-Cwe" id="SPA-5Y-MEi"/>
                     </connections>

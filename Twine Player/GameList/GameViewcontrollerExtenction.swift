@@ -6,8 +6,7 @@
 //  Copyright © 2020 Petr Grakunov. All rights reserved.
 //
 
-import Foundation
-import SwiftLog
+import UIKit
 
 // Parsing functionality
 extension GameListViewController{
@@ -17,7 +16,7 @@ extension GameListViewController{
         let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
         let gamesDirectory = path!.appendingPathComponent(directoryName)
         
-        logw(String(format: "Dir path \(gamesDirectory.path)"))
+        NSLog(String(format: "Dir path \(gamesDirectory.path)"))
         
         return gamesDirectory
     }
@@ -26,15 +25,15 @@ extension GameListViewController{
         let appUrl = returnAppDir()
         
         if !FileManager.default.fileExists(atPath: appUrl.path) {
-            logw("Trying to create a folder")
+            NSLog("Trying to create a folder")
             do {
                 try FileManager.default.createDirectory(atPath: appUrl.path, withIntermediateDirectories: true, attributes: nil)
-                logw("Created")
+                NSLog("Created")
             } catch let error as NSError {
-                logw(error.localizedDescription)
+                NSLog(error.localizedDescription)
             }
         } else {
-            logw("Folder exists")
+            NSLog("Folder exists")
         }
     }
     
@@ -65,50 +64,62 @@ extension GameListViewController{
             do {
                 let items = try FileManager.default.contentsOfDirectory(atPath: appUrl.path)
                 for item in items {
-                    logw("Checking \"\(item)\"")
+                    NSLog("Checking \"\(item)\"")
                     let path = appUrl.appendingPathComponent(item)
-                    logw("Calling for \"\(path.path)\"")
+                    NSLog("Calling for \"\(path.path)\"")
                     
                     var game: TwineGame?
                     
                     if gameDecodedList[path] == nil {
-                        logw("Wasn't synced")
+                        NSLog("Wasn't synced")
                         game = TwineGame(path)
                     } else {
-                        logw("Was synced")
+                        NSLog("Was synced")
                         game = gameDecodedList[path]
                     }
                     
-                    newGameList.append(try! JSONEncoder().encode(game))
-                    list.append(game!)
+                    if game?.isTwine as! Bool {
+                        newGameList.append(try! JSONEncoder().encode(game))
+                        list.append(game!)
+                    }
                 }
             } catch let error as NSError {
-                logw(error.localizedDescription)
+                NSLog(error.localizedDescription)
             }
         }
         
         UserDefaults.standard.set(newGameList, forKey: "gameList")
         
-        logw("\(list.count) elements")
+        NSLog("\(list.count) elements")
         
         return list
     }
     
     func importData(_ url: URL?) {
-        logw("Trying to import data")
+        NSLog("Trying to import data")
         var newPathUrl = returnAppDir()
         guard url != nil else {return}
         let fileName = url!.lastPathComponent
         
         newPathUrl.appendPathComponent(fileName, isDirectory: false)
-        logw("Copy new file to \(newPathUrl)")
+        NSLog("Copy new file to \(newPathUrl)")
         
         do {
             try FileManager.default.copyItem(at: url!, to: newPathUrl)
         } catch let error as NSError {
-            logw("Unable to copy item, \(error.localizedDescription) occured")
+            NSLog("Unable to copy item, \(error.localizedDescription) occured")
+            alert(title: "Error occured", description: error.localizedDescription)
         }
         self.gameList = parseFolder()
         
+    }
+}
+
+// MARK: - Alert
+extension GameListViewController {
+    func alert(title: String, description: String) {
+        let alert = UIAlertController(title: title, message: description, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
 }

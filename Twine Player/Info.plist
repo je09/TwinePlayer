@@ -11,12 +11,14 @@
 			<array>
 				<string></string>
 			</array>
+			<key>CFBundleTypeIconFiles</key>
+			<array/>
 			<key>CFBundleTypeName</key>
 			<string>Twine Game</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
 			<key>LSHandlerRank</key>
 			<string>Owner</string>
-			<key>CFBundleTypeRole</key>
-			<string>Viewer</string>
 			<key>LSItemContentTypes</key>
 			<array>
 				<string>public.html</string>
@@ -41,7 +43,13 @@
 	<true/>
 	<key>LSSupportsOpeningDocumentsInPlace</key>
 	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string></string>
 	<key>NSDocumentsFolderUsageDescription</key>
+	<string></string>
+	<key>NSDownloadsFolderUsageDescription</key>
+	<string></string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string></string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
